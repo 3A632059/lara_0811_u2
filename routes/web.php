@@ -11,15 +11,15 @@
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     //return view('welcome');
     //練習1-1
     //return'welcome';
     //練習1-2
-    //return view('welcome');
+    return view('welcome');
     //練習1-3
-    return redirect('welcome');
-    });*/
+    //return redirect('welcome');
+    });
 
 /*//練習2-1
 Route::get( 'hello/{name}', function($name) {
@@ -41,6 +41,16 @@ Route::get('hello/{name?}',function($name='yingjhen') {
 Route::get('hello/{name?}',['as'=>'hello.index', function($name='Everybody') {
     return 'Hello, '.$name;
 }]);
+
+
+//練習4-2
+Route::get('/', function () {
+    return view('welcome');
+});
+
+/*Route::get('hello/{name?}',['as'=>'hello.index', function($name='Everybody') {
+    return 'Hello, '.$name;
+}]);*/
 
 
 

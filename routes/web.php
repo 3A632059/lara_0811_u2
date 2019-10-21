@@ -53,9 +53,16 @@ Route::get('say/{name?}',['as'=>'hello.index', function($name='Everybody') {
     return view('welcome');
 }]);*/
 
-//練習5-1
+/*//練習5-1
 Route::get('dashboard',function(){
     return'dashboard';
+});*/
+
+//練習5-2
+Route::group(['prefix'=>'admin'],function(){
+    Route::get('dashboard',function(){
+        return'admin dashboard';
+    });
 });
 
 

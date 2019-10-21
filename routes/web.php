@@ -14,7 +14,9 @@
 Route::get('/', function () {
     //return view('welcome');
     //練習1-1
-    return'welcome';
+    //return'welcome';
+    //練習1-2
+    return view('welcome');
     });
 
 

@@ -43,7 +43,7 @@ Route::get('hello/{name?}',['as'=>'hello.index', function($name='Everybody') {
 }]);*/
 
 
-//練習4-2
+/*//練習4-2
 Route::get('/', function () {
     return view('welcome');
 });
@@ -51,7 +51,12 @@ Route::get('/', function () {
 //練習4-3
 Route::get('say/{name?}',['as'=>'hello.index', function($name='Everybody') {
     return view('welcome');
-}]);
+}]);*/
+
+//練習5-1
+Route::get('dashboard',function(){
+    return'dashboard';
+});
 
 
 

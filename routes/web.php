@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     //return view('welcome');
     //練習1-1
     //return'welcome';
@@ -19,7 +19,12 @@ Route::get('/', function () {
     //return view('welcome');
     //練習1-3
     return redirect('welcome');
-    });
+    });*/
+
+//練習2-1
+Route::get( 'hello/{name}', function($name) {
+    return 'Hello, '.$name;
+});
 
 
 

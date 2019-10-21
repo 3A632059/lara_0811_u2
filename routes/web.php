@@ -21,10 +21,17 @@
     return redirect('welcome');
     });*/
 
-//練習2-1
+/*//練習2-1
 Route::get( 'hello/{name}', function($name) {
     return 'Hello, '.$name;
+});*/
+
+//練習2-3
+Route::get('hello/{name?}',function($name='Everybody') {
+    return 'Hello, '.$name;
 });
+
+
 
 
 

@@ -31,10 +31,17 @@ Route::get('hello/{name?}',function($name='Everybody') {
     return 'Hello, '.$name;
 });*/
 
-//練習3-3
+/*//練習3-3
 Route::get('hello/{name?}',function($name='yingjhen') {
     return 'Hello, '.$name;
-});
+});*/
+
+
+//練習4-1
+Route::get('hello/{name?}',['as'=>'hello.index', function($name='Everybody') {
+    return 'Hello, '.$name;
+}]);
+
 
 
 

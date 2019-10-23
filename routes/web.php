@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     //return view('welcome');
     //練習1-1
     //return'welcome';
@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('welcome');
     //練習1-3
     //return redirect('welcome');
-    });
+    });*/
 
 /*//練習2-1
 Route::get( 'hello/{name}', function($name) {
@@ -58,12 +58,17 @@ Route::get('dashboard',function(){
     return'dashboard';
 });*/
 
-//練習5-2
+/*//練習5-2
 Route::group(['prefix'=>'admin'],function(){
     Route::get('dashboard',function(){
         return'admin dashboard';
     });
-});
+});*/
+
+
+//練習7-1
+Route::get('/',['as'=>'home.index','uses'=>
+    'HomeController@index']);
 
 
 

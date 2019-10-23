@@ -16,10 +16,13 @@ Route::get('/', function () {
     //練習1-1
     //return'welcome';
     //練習1-2
-    return view('welcome');
+    //return view('welcome');
     //練習1-3
-    //return redirect('welcome');
+    return redirect('welcome');
     });
+Route::get('welcome',function(){
+    return'Hello';
+});
 
 /*//練習2-1
 Route::get( 'hello/{name}', function($name) {
@@ -37,10 +40,10 @@ Route::get('hello/{name?}',function($name='yingjhen') {
 });*/
 
 
-//練習4-1
+/*//練習4-1
 Route::get('hello/{name?}',['as'=>'hello.index', function($name='Everybody') {
     return 'Hello, '.$name;
-}]);
+}]);*/
 
 
 /*//練習4-2
@@ -66,8 +69,8 @@ Route::group(['prefix'=>'admin'],function(){
 });*/
 
 
-//練習7-1
-Route::get('/',['as'=>'home.index','uses'=> 'HomeController@index']);
+/*//練習7-1
+Route::get('/',['as'=>'home.index','uses'=> 'HomeController@index']);*/
 
 
 

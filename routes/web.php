@@ -37,10 +37,10 @@ Route::get('hello/{name?}',function($name='yingjhen') {
 });*/
 
 
-/*//練習4-1
+//練習4-1
 Route::get('hello/{name?}',['as'=>'hello.index', function($name='Everybody') {
     return 'Hello, '.$name;
-}]);*/
+}]);
 
 
 /*//練習4-2
@@ -67,8 +67,7 @@ Route::group(['prefix'=>'admin'],function(){
 
 
 //練習7-1
-Route::get('/',['as'=>'home.index','uses'=>
-    'HomeController@index']);
+Route::get('/',['as'=>'home.index','uses'=> 'HomeController@index']);
 
 
 

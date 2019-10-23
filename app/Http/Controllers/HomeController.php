@@ -13,8 +13,12 @@ class HomeController extends Controller
      */
     public function index()
     {
-        //
-        return 'index';
+        /*//練習7-2
+        return 'index';*/
+        //練習7-3
+        return view('welcome');
+
+
     }
 
     /**
